@@ -1,0 +1,50 @@
+apply plugin: 'java'
+apply plugin: 'org.javafxports.jfxmobile'
+apply plugin:'maven'
+apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/8.1.1/javafx.plugin'
+
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" } 
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.7'
+        classpath 'com.github.marconi1992:kairos-framework:0.5'
+        classpath 'org.javafxports:dalvik-sdk:8.60.6'
+        classpath 'de.jensd:fontawesomefx:8.9'
+    }
+}
+
+//set user.dir
+sourceSets.main.resources.srcDir 'src/main/java'
+mainClassName = 'com.eby.main.Main'
+
+javafx{
+    mainClass 'com.eby.main.Main'
+}
+
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" } 
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.github.marconi1992:kairos-framework:0.5'
+    compile 'de.jensd:fontawesomefx:8.9'
+}
+
+jfxmobile {
+    javafxportsVersion = '8.60.6'
+    ios {
+        forceLinkClasses = ['ensemble.**.*']
+    }
+    android {
+        androidSdk='/opt/android-sdk-linux'
+        compileSdkVersion= 21
+    }
+    
+}

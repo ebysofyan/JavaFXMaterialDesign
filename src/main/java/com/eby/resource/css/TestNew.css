@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2016, 10:50:58 PM
+    Author     : eby
+*/
+
+@font-face {
+    font-family: 'Ubuntu Condensed';
+}
+@font-face {
+    font-family: 'ubuntu Condensed';
+}
+*{
+    -color-primary:#3F51B5;
+    -color-accent:#F44336;
+    -color-secondary:#1E88E5;
+    -color-dark-primary:#1976D2;
+    -color-body:#F5F5F5;
+}
+
+*{
+    -color-primary:#3F51B5;
+    -color-accent:#F44336;
+    -color-secondary:#1E88E5;
+    -color-dark-primary:#1976D2;
+    -color-body:#F5F5F5;
+}
+
+.text-input{
+    -fx-highlight-fill: rgba(0,0,0,0.15);
+    -fx-highlight-text-fill: black;
+}
+
+.text-input{
+    -fx-font-size:16;
+    -fx-font-family:"Roboto";
+}
+
+.tool-bar{
+    -fx-background-color: deepskyblue;
+}
+
+/* EditText*/
+.edit-text{
+    -fx-baseline-color: -color-primary;
+    -fx-baseline-focus-color: -color-accent;
+    -fx-padding: 16 0 8 0;
+}
+.edit-text.hint{
+    -fx-padding: 16 0 8 0;
+}
+
+.edit-text.icon .icon-svg{
+    -fx-fill:#636363;
+}
+.edit-text.icon.focus .icon-svg{
+
+    -fx-fill: -color-primary;
+}
+
+
+.edit-text.icon{
+    -fx-padding:16 0 8 48;
+}
+
+.edit-text .text-input{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-padding:0 0 8 0;
+    -fx-border-width: 0 0 1 0 ;
+    -fx-border-color: rgba(0,0,0,0.15);
+}
+.edit-text .text-input:disabled{
+    -fx-border-style:dashed;
+    -fx-opacity:0.7;
+}
+.edit-text .label{
+    -fx-text-fill:#999;
+}
+.edit-text  .label.up  {
+    -fx-text-fill:-color-primary;
+}
+.edit-text .bar{
+    -fx-stroke:-color-primary;
+}
+
+.material-button{
+    -fx-background-color: #3c8dbc;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+.material-button:hover{
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-background-radius: 0;
+}
+
+.material-button-back{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-animated: true;
+}
+.material-button-back:hover{
+    -fx-background-color: #f56954;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-animated: true;
+}
+.material-button-back:pressed{
+    -fx-background-color: #f56954;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-animated: true;
+}
