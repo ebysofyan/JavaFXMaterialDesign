@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+<<<<<<< HEAD
     <AnchorPane fx:id="paneView">
         <VBox alignment="TOP_CENTER" prefHeight="625" prefWidth="644" spacing="70" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" stylesheets="@../resource/css/TestNew.css" >
             <HBox alignment="CENTER" spacing="10">
@@ -21,4 +22,20 @@
             </HBox> 
         </VBox>      
     </AnchorPane>
+=======
+    <VBox alignment="TOP_CENTER" prefHeight="625" prefWidth="644" spacing="70" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" stylesheets="@../resource/css/TestNew.css" >
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <org.kairos.components.MaterialButton fx:id="btnBack" prefHeight="50" prefWidth="50" styleClass="material-button-back" />   
+            <Label text="Product Menu" textFill="black" />
+        </HBox> 
+        <HBox alignment="CENTER" spacing="60">
+            <org.kairos.components.MaterialButton fx:id="btnProduct" alignment="CENTER" contentDisplay="TOP" maxHeight="150" maxWidth="200" prefHeight="150" prefWidth="200" styleClass="material-button" text="Product List" />  
+            <org.kairos.components.MaterialButton fx:id="btnSuppliers" alignment="CENTER" contentDisplay="TOP" maxHeight="150" maxWidth="200" prefHeight="150" prefWidth="200" styleClass="material-button" text="Suppliers" />  
+        </HBox> 
+        <HBox alignment="CENTER" spacing="60">
+            <org.kairos.components.MaterialButton fx:id="btnBrand" alignment="CENTER" contentDisplay="TOP" maxHeight="150" maxWidth="200" prefHeight="150" prefWidth="200" styleClass="material-button" text="Brand" />  
+            <org.kairos.components.MaterialButton fx:id="btnCategory" alignment="CENTER" contentDisplay="TOP" maxHeight="150" maxWidth="200" prefHeight="150" prefWidth="200" styleClass="material-button" text="Category" />  
+        </HBox> 
+    </VBox>      
+>>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
 </fx:root>

@@ -6,6 +6,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<<<<<<< HEAD
+=======
+<?import org.kairos.Toolbar?>
+<?import org.kairos.components.MaterialButton?>
+<?import org.kairos.components.TextInputLayout?>
+<?import org.kairos.layouts.DrawerLayout?>
+>>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
 
 <AnchorPane fx:id="paneParent" prefHeight="700" prefWidth="900" style="-fx-background-color:#FAFAFA" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">  
     <org.kairos.layouts.DrawerLayout fx:id="drawer" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
@@ -32,12 +39,17 @@
             </VBox>
         </content>
         <nav>
+<<<<<<< HEAD
             <javafx.scene.layout.Pane fx:id="paneNav" layoutX="0" layoutY="0" style="-fx-background-color: #dfdfdf" >
+=======
+            <javafx.scene.layout.Pane fx:id="paneNav" layoutX="0" layoutY="0" style="-fx-background-color: #dfdfdf" TextInputLayout.alignment="BASELINE_LEFT">
+>>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
                 <VBox spacing="10"> 
                     <javafx.scene.image.ImageView fitHeight="75" fitWidth="256" smooth="true">
                         <javafx.scene.image.Image url="@../resource/image/Background.jpg" />
                     </javafx.scene.image.ImageView>         
                     <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+<<<<<<< HEAD
                         <org.kairos.components.MaterialButton fx:id="btnMaximize" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="MAXIMIZE" textFill="white" /> 
                     </javafx.scene.layout.HBox> 
                     <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
@@ -48,6 +60,18 @@
                     </javafx.scene.layout.HBox> 
                     <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
                         <org.kairos.components.MaterialButton fx:id="btnClose" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="Close" textFill="white" /> 
+=======
+                        <MaterialButton fx:id="btnMaximize" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="MAXIMIZE" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <MaterialButton fx:id="btnMinimize" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="MINIMIZE" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <MaterialButton fx:id="btnFullScreen" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="FULLSCREEN" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <MaterialButton fx:id="btnClose" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="Close" textFill="white" /> 
+>>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
                     </javafx.scene.layout.HBox> 
                 </VBox>  
             </javafx.scene.layout.Pane>   

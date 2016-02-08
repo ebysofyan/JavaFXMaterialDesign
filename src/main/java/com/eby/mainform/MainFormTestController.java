@@ -88,6 +88,7 @@ public class MainFormTestController extends Activity {
         });
     }
 
+<<<<<<< HEAD
     public Toolbar getToolbar() {
         return toolbar;
     }
@@ -96,6 +97,8 @@ public class MainFormTestController extends Activity {
         this.toolbar = toolbar;
     }
 
+=======
+>>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
     private void initIcon() {
         btnDashboard.setGraphic(MaterialButtonIcon.icon(new MaterialDesignIconView(MaterialDesignIcon.VIEW_DASHBOARD), "30"));
         btnProduct.setGraphic(MaterialButtonIcon.icon(new MaterialDesignIconView(MaterialDesignIcon.DROPBOX), "30"));
