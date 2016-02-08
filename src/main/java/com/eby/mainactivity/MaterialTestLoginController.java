@@ -62,11 +62,7 @@ public class MaterialTestLoginController extends Activity {
     private MaterialButton btnFullScreen;
     @FXML
     private MaterialButton btnClose;
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
     private ActivityFactory factory;
     private Stage stage;
     private double w, h;
@@ -83,10 +79,7 @@ public class MaterialTestLoginController extends Activity {
         toolbar.setDisplayShowHomeEnabled(true);
         toolbar.setTitle("Login To Your Account");
         toolbar.getStyleClass().addAll("tool-bar");
-<<<<<<< HEAD
-        
-=======
->>>>>>> a5e55038ee62ebdd15356073bf043954f24346c4
+
         setActionBar(toolbar);
 
         btnLogin.setContentDisplay(ContentDisplay.RIGHT);
