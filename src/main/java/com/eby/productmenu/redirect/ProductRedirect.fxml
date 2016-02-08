@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kairos.components.MaterialButton?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <AnchorPane fx:id="paneView" stylesheets="@../../resource/css/TestNew.css"> 
+        <VBox alignment="CENTER" spacing="140" >
+            <HBox alignment="CENTER_LEFT" spacing="20">
+                <org.kairos.components.MaterialButton fx:id="btnBack" prefHeight="50" prefWidth="50" styleClass="material-button-back" />   
+                <Label text="Product Menu" textFill="black" />
+            </HBox> 
+            <HBox alignment="CENTER" >
+                <Label text="Ini Product" />
+            </HBox>
+        </VBox>
+    </AnchorPane>
+</fx:root>

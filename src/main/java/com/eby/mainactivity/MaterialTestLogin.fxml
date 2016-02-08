@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="paneParent" prefHeight="700" prefWidth="900" style="-fx-background-color:#FAFAFA" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">  
+    <org.kairos.layouts.DrawerLayout fx:id="drawer" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <content>
+            <VBox alignment="TOP_CENTER" prefHeight="600" prefWidth="800" spacing="50" style="-fx-background-color:white;">
+                <org.kairos.Toolbar fx:id="toolbar" prefHeight="75" style="-fx-background-color: #3c8dbc;" />  
+                <VBox alignment="CENTER_RIGHT" spacing="20" style="-fx-padding: 0 50 20 50;">
+                    <org.kairos.components.TextInputLayout>
+                        <javafx.scene.control.TextField fx:id="txtUsername" promptText="Username" />
+                    </org.kairos.components.TextInputLayout>
+                    <org.kairos.components.TextInputLayout>
+                        <javafx.scene.control.PasswordField fx:id="txtPassword" promptText="Password" />
+                    </org.kairos.components.TextInputLayout>
+                    <org.kairos.components.TextInputLayout>
+                        <javafx.scene.control.TextArea promptText="Descriptions" />
+                    </org.kairos.components.TextInputLayout>
+                    <org.kairos.components.TextInputLayout>
+                        <javafx.scene.control.ComboBox prefWidth="700" promptText="Test" />
+                    </org.kairos.components.TextInputLayout>
+                    <javafx.scene.layout.HBox spacing="20">
+                    </javafx.scene.layout.HBox> 
+                    <org.kairos.components.MaterialButton fx:id="btnLogin" flated="true" style="-fx-background-color: #367fa9; -fx-text-fill: white; -fx-fill: white; -fx-fill-color: white;" text="Login" textAlignment="LEFT" textFill="WHITE" />  
+                </VBox>
+            </VBox>
+        </content>
+        <nav>
+            <javafx.scene.layout.Pane fx:id="paneNav" layoutX="0" layoutY="0" style="-fx-background-color: #dfdfdf" >
+                <VBox spacing="10"> 
+                    <javafx.scene.image.ImageView fitHeight="75" fitWidth="256" smooth="true">
+                        <javafx.scene.image.Image url="@../resource/image/Background.jpg" />
+                    </javafx.scene.image.ImageView>         
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <org.kairos.components.MaterialButton fx:id="btnMaximize" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="MAXIMIZE" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <org.kairos.components.MaterialButton fx:id="btnMinimize" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="MINIMIZE" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <org.kairos.components.MaterialButton fx:id="btnFullScreen" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="FULLSCREEN" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                    <javafx.scene.layout.HBox alignment="BASELINE_LEFT" spacing="20">
+                        <org.kairos.components.MaterialButton fx:id="btnClose" alignment="BASELINE_LEFT" flated="true" prefHeight="50" prefWidth="256" style="-fx-background-radius: 0;" text="Close" textFill="white" /> 
+                    </javafx.scene.layout.HBox> 
+                </VBox>  
+            </javafx.scene.layout.Pane>   
+        </nav>
+    </org.kairos.layouts.DrawerLayout>
+</AnchorPane>
